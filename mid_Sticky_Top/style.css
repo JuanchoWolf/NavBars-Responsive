@@ -4,45 +4,74 @@
     padding: 0;
     box-sizing: border-box;
 
-    /*text-decoration: none;*/
+    text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    font-size: xx-large;
 }
 body {
-    
     background-color: #f0f0f0;
     color: #0f0f0f;
 }
 
-.top__index .textarea{
-    z-index: 0;
-    position: relative;
-
+.top__index {
+    width: 100%;
+    height: 450px;
+    background-image: url(https://www.vsnb.com/sites/default/files/2022-07/Linkedin%20%282%29.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 2px #0f0f0f, 0 0 1em #ffffff, 0 0 0.2em #a0a0a0;
+    
+}
+.top__index .textarea {
+    font-size: larger;
     text-align: end;
-    margin-right: 10%;
-    margin-top: 48px;
-
+    text-decoration: underline;
     font-style: italic;
     font-variant: small-caps;
-    text-decoration: underline;
-    text-transform:capitalize;
-    
-    color: #ffffff;
-    text-shadow: 1px 1px 2px #0f0f0f, 0 0 1em #ffffff, 0 0 0.2em #f0f0f0;
-}
-.top__index .backimage img{
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80%;
+
+    padding-top: 20%;
+    padding-right: 14%;
 }
 
 .navbar {
-    margin-top: calc(225px - 48px);
-    position: sticky;
-    background-color: #0f0f0f;
     width: 100%;
-    height: 48px;
+    height: 42px;
+    background-color: #0f0f0f;
+    color: #f0f0f0;
+}
+.navbar li {
+    display: inline;
+    padding: 0 12px;
+}
+
+.container {
+    margin: 5% 10%;
+    text-align: justify;
+}
+.container h1 {
+    margin-top: 5%;
+    color: #001e7d;
+}
+.container h3 {
+    margin: 3% 5%;
+    text-decoration: underline dotted;
+    color: #3e7eeb;
+}
+.container p {
+    text-indent: 10%;
+    font-size: 14px;
+}
+
+footer {
+    width: 100%;
+    height: 64px;
+    background-color: #0f0f0f;
+    color: #f0f0f0;
+    
+}
+footer h6 {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 18px;
 }

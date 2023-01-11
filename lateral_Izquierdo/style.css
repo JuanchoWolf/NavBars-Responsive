@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: x-large;
+}
+body {
+    margin-left: 100px;
+    background-color: #f0f0f0;
+    color: #0f0f0f;
+}
+
+.navbar {
+    z-index: 100;
+    width: 80px;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+
+    background-color: wheat;
+    color: black;
+
+    font-size: 18px;
+    border-right: 20px solid wheat;
+}
+
+.menu {
+    margin-top: 25px;
+    padding-left: 31px;
+    display: flex;
+    align-items: center;
+}
+
+.branding {
+    padding: 20px 31px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.branding i {
+    /*width: 20px;*/
+    margin-right: 20px;
+}
+.branding h4 {
+    font-weight: 500;
+}
+
+.options_menu {
+    padding: 20px 30px;
+    position: absolute;
+    top: 225px;
+    left: 0;
+}
+.options_menu a {
+    color: rgba(0, 0, 0, 0.5);
+    cursor: default;
+    display: block;
+    position: relative;
+    transition: color 200ms;
+}
+.options_menu a:hover {
+    color: black;
+}
+.options_menu .option {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.options_menu .option i {
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.options_menu .option h4 {
+    font-weight: 300;
+}
+
+a.active {
+    color: black;
+    font-style: italic;
+}
+.active:before {
+    background-color: black;
+    content: '';
+
+    position: absolute;
+    width: 5px;
+    height: 80%;
+    top: 10%;
+    left: -30px;
+}
+
+.change_theme {
+    display: flex;
+    position: fixed;
+    top: 850px;
+    left: 30px;
+}
+.change_theme button{
+    color: rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    border-color: transparent;
+    display: flex;
+    align-items: center;
+    transition: color 200ms;
+}
+.change_theme i {
+    padding-right: 15px;
+    color: rgba(0, 0, 0, 0.9);
+}
+.change_theme h4 {
+    font-weight: 300;
+}
+.change_theme .disable {
+    display: none;
+}
+.change_theme button:hover {
+    color: black;
+}

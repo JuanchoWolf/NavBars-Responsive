@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+/*GENERAL & BODY STRUCTURE*/
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +12,13 @@ body {
     background-color: #f0f0f0;
     color: #0f0f0f;
 }
+body.darkMode {
+    background-color: #0f0f0f;
+    color: #f0f0f0;
+}
+/**/
 
+/*UPPER CONTENT*/
 .top__index {
     width: 100%;
     height: 450px;
@@ -33,18 +40,48 @@ body {
     padding-top: 20%;
     padding-right: 14%;
 }
+/**/
 
+/*NAVIGATION BAR*/
 .navbar {
     width: 100%;
     height: 42px;
+    align-items: center;
     background-color: #0f0f0f;
-    color: #f0f0f0;
+    display: flex;
 }
-.navbar li {
-    display: inline;
+.navbar.darkMode {
+    background-color: #a0a0a0;
+}
+.navbar.darkMode .buttons{
+    color: #000000;
+}
+.navbar.darkMode .theme img {
+    filter: invert(0);
+}
+.navbar .brand {
+    margin: 0 18px;
+}
+.navbar .theme button {
+    background: transparent;
+    border-color: transparent;
+}
+.navbar .theme img {
+    filter: invert(0.85);
+}
+.navbar .buttons {
+    color: #ffffff;
     padding: 0 12px;
-}
 
+}
+.navbar .buttons li {
+    display: inline;
+    padding: 0 8px;
+
+}
+/**/
+
+/*TEXT CONTEINER*/
 .container {
     margin: 5% 10%;
     text-align: justify;
@@ -62,7 +99,9 @@ body {
     text-indent: 10%;
     font-size: 14px;
 }
+/**/
 
+/*FOOTER PAGE*/
 footer {
     width: 100%;
     height: 64px;
@@ -70,8 +109,13 @@ footer {
     color: #f0f0f0;
     
 }
+footer.darkMode {
+    background-color: #a0a0a0;
+    color: #0f0f0f;
+}
 footer h6 {
     font-size: 14px;
     text-align: center;
     padding-top: 18px;
 }
+/**/

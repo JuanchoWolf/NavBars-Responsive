@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Mid Bar - Sticky</title>
@@ -11,6 +12,9 @@
 <body data-server-no-reload>
     <!-- Top Content -->
     <div class="top__index">
+        <div class="theme">
+            <button id="switch" title="themeSelector"><img src="assets/sun_theme.png" alt="" width="32" height="32"></button>
+        </div>
         <div class="textarea">
             <h1>Tranports 'The Panas'</h1>
             <h3>Security & Logistic</h3>
@@ -21,46 +25,66 @@
     <!---->
     <!-- NavBar -->
     <div class="navbar">
-        <div class="brand">
-            <img src="/mid_Sticky_Top/favicon.ico" alt="brand" height="44" width="48">
-        </div>
-        <div class="theme">
-            <button id="switch"><img src="assets/sun_theme.png" alt="" width="32" height="32"></button>
-        </div>
-        <div class="buttons">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Time</li>
-            </ul>
-        </div>
+        <nav class="menu">
+            <a href="#1">Home</a>
+            <a href="#2">About</a>
+            <a href="#3">Time</a>
+            <a href="#4">Points</a>
+            <span class="indicador" id="indicador"></span>
+        </nav>
     </div>
     <!---->
     <!-- Down Content -->
     <div class="container">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus suscipit incidunt vero, doloribus ea fuga impedit blanditiis quaerat. Aperiam error iste animi repudiandae alias voluptate nisi magni quae voluptatem delectus asperiores atque quia, autem numquam ex quo facere totam minus possimus vel mollitia adipisci in exercitationem? Laboriosam velit necessitatibus, laudantium consequatur id eligendi vel optio, quisquam earum nulla quaerat? Ex reprehenderit illo nulla quae.</p>
-        <h1>
-            Hello There
-        </h1>
-        <h3>
-            What is About?
-        </h3>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolor necessitatibus impedit nihil eaque rem accusantium esse. Culpa odit quasi magnam error quo perspiciatis non incidunt! Magnam qui non enim harum necessitatibus error nam sunt, placeat laudantium animi nesciunt odit laboriosam fuga omnis beatae nobis quia, sed ducimus atque, modi aliquam. Fugiat quidem assumenda earum velit labore minus suscipit voluptate maiores, minima placeat quae.
-        </p>
-        <h3>
-            Our Beginning
-        </h3>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quia accusantium officia hic inventore perferendis cum, ab nemo ex ratione tenetur sequi velit saepe! Dicta repudiandae fugiat delectus totam magnam. Earum perspiciatis, maxime magnam aut numquam vitae corporis tempora laboriosam ad animi hic. Vero facilis, rerum repellendus vel numquam doloribus eius voluptatibus.
-        </p>
+        <div class="seccion" id="1">
+            <h1>
+                It's Home
+            </h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus suscipit incidunt vero, doloribus ea fuga impedit blanditiis quaerat. Aperiam error iste animi repudiandae alias voluptate nisi magni quae voluptatem delectus asperiores atque quia, autem numquam ex quo facere totam minus possimus vel mollitia adipisci in exercitationem? Laboriosam velit necessitatibus, laudantium consequatur id eligendi vel optio, quisquam earum nulla quaerat? Ex reprehenderit illo nulla quae.
+            </p>
+        </div>
+        <div class="seccion" id="2">
+            <h1>
+                Hello There
+            </h1>
+            <h3>
+                What is About?
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolor necessitatibus impedit nihil eaque rem accusantium esse. Culpa odit quasi magnam error quo perspiciatis non incidunt! Magnam qui non enim harum necessitatibus error nam sunt, placeat laudantium animi nesciunt odit laboriosam fuga omnis beatae nobis quia, sed ducimus atque, modi aliquam. Fugiat quidem assumenda earum velit labore minus suscipit voluptate maiores, minima placeat quae.
+            </p>
+        </div>
+        <div class="seccion" id="3">
+            <h1>Time Lineup</h1>
+            <h3>
+                Our Beginning
+            </h3>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quia accusantium officia hic inventore perferendis cum, ab nemo ex ratione tenetur sequi velit saepe! Dicta repudiandae fugiat delectus totam magnam. Earum perspiciatis, maxime magnam aut numquam vitae corporis tempora laboriosam ad animi hic. Vero facilis, rerum repellendus vel numquam doloribus eius voluptatibus.
+            </p>
+        </div>
+        <div class="seccion" id="4">
+            <h1>
+                Points around the World
+            </h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis corrupti similique error odit deleniti tenetur magnam ab explicabo, accusantium quam accusamus autem tempora obcaecati placeat! Dolor, qui architecto. Iure provident fugiat inventore ut esse. Minima laudantium quam consectetur quae!
+            </p>
+            <div class="img">
+                <img loading="lazy" src="assets/map-tabea-unsplash.jpg" alt="map of Points" width="90%">
+            </div>
+        </div>
     </div>
     <!---->
     <footer>
+        <div class="brand">
+            <img src="/mid_Sticky_Top/favicon.ico" alt="brand" height="32" width="32">
+        </div>
         <h6>
             @tefu1220ce ; All Right Reserved
         </h6>
     </footer>
 </body>
-<script src="index.js"></script>
+<script type="text/javascript" src="index.js"></script>
 </html>

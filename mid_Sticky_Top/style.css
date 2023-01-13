@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 /*GENERAL & BODY STRUCTURE*/
 * {
+    /*
+        REMPLACED FOR NORMALICE CSS
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
     text-decoration: none;
+    */
     font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
 }
 body {
     background-color: #f0f0f0;
@@ -19,16 +25,22 @@ body.darkMode {
 /**/
 
 /*UPPER CONTENT*/
+.theme button {
+    background: transparent;
+    border-color: transparent;
+}
+.theme img {
+    filter: invert(1); /* invert the base color of the image */
+}
 .top__index {
     width: 100%;
-    height: 450px;
+    height: calc(100vh - 48px); /* 100% of the height of the window minus the size of the navbar */
     background-image: url(https://www.vsnb.com/sites/default/files/2022-07/Linkedin%20%282%29.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     color: #f0f0f0;
     text-shadow: 1px 1px 2px #0f0f0f, 0 0 1em #ffffff, 0 0 0.2em #a0a0a0;
-    
 }
 .top__index .textarea {
     font-size: larger;
@@ -36,86 +48,132 @@ body.darkMode {
     text-decoration: underline;
     font-style: italic;
     font-variant: small-caps;
-
-    padding-top: 20%;
+    padding-top: 10%;
     padding-right: 14%;
 }
 /**/
 
 /*NAVIGATION BAR*/
+nav {
+    display: flex;
+    
+}
+nav a {
+    font-size: 18px;
+    flex: 1;
+    height: 48px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    transition: .3s ease-in-out all;
+}
+nav a:hover {
+    color: #3d5ec7;
+    background-color: #a0a0a05e;
+    text-shadow: 0 0 10px rgb(0, 0, 255);
+}
+nav .indicador {
+    width: 25%;
+    height: 7px;
+    background-color: #001e7d;
+    position: absolute;
+    bottom: 0;
+    transition: .3s ease-in-out all;
+}
 .navbar {
     width: 100%;
-    height: 42px;
-    align-items: center;
+    height: 48px;
     background-color: #0f0f0f;
-    display: flex;
+    box-shadow: 0 12px 6px rgba(0, 0, 0, 0.25);
+    position: sticky;
+    top: 0;
+    overflow: hidden;
 }
-.navbar.darkMode {
+body.darkMode .navbar {
     background-color: #a0a0a0;
 }
-.navbar.darkMode .buttons{
-    color: #000000;
+body.darkMode nav a{
+    color: #0f0f0f;
 }
-.navbar.darkMode .theme img {
-    filter: invert(0);
-}
-.navbar .brand {
-    margin: 0 18px;
-}
-.navbar .theme button {
-    background: transparent;
-    border-color: transparent;
-}
-.navbar .theme img {
-    filter: invert(0.85);
-}
-.navbar .buttons {
-    color: #ffffff;
-    padding: 0 12px;
-
-}
-.navbar .buttons li {
-    display: inline;
-    padding: 0 8px;
-
+body.darkMode nav a:hover {
+    background-color: #4f4f4f;
 }
 /**/
 
 /*TEXT CONTEINER*/
 .container {
-    margin: 5% 10%;
+    padding: 0 10%;
     text-align: justify;
 }
 .container h1 {
-    margin-top: 5%;
+    padding-top: 56px;
     color: #001e7d;
 }
 .container h3 {
-    margin: 3% 5%;
+    
+    margin-left: 5%;
     text-decoration: underline dotted;
     color: #3e7eeb;
 }
 .container p {
     text-indent: 10%;
     font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 18px;
+}
+
+.container .seccion .img img{
+    display: block;
+    margin: 24px auto 0 auto;
+    width: 90%;
+    border-radius: 8px;
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0 0  0 2px rgb(255,255,255), 0.3em 0.3em 1em rgba(0,0,0,0.3);;
+}
+body.darkMode .container .seccion .img img {
+    box-shadow: inset 0 -3em 3em rgba(255,255,255,0.1), 0 0  0 2px rgb(0,0,0), 0.3em 0.3em 1em rgba(255,255,255,0.3);;
 }
 /**/
 
 /*FOOTER PAGE*/
 footer {
+    margin-top: 64px;
     width: 100%;
     height: 64px;
     background-color: #0f0f0f;
     color: #f0f0f0;
-    
+    box-shadow: 1px 12px 6px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
-footer.darkMode {
+body.darkMode footer {
     background-color: #a0a0a0;
     color: #0f0f0f;
+    box-shadow: rgb(255, 255, 255) 1px 8px 24px;
+}
+footer .brand img {
+    padding-right: 24px;
 }
 footer h6 {
     font-size: 14px;
-    text-align: center;
-    padding-top: 18px;
 }
 /**/
+
+/* MEDIA QUERY*/
+@media screen and (max-width: 800px) {
+    nav a {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    nav a {
+        font-size: 12px;
+    }
+}

@@ -35,7 +35,7 @@ body.darkMode {
 .top__index {
     width: 100%;
     height: calc(100vh - 48px); /* 100% of the height of the window minus the size of the navbar */
-    background-image: url(https://www.vsnb.com/sites/default/files/2022-07/Linkedin%20%282%29.jpg);
+    background-image: url('assets/transport.jpg') ;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,7 +56,6 @@ body.darkMode {
 /*NAVIGATION BAR*/
 nav {
     display: flex;
-    
 }
 nav a {
     font-size: 18px;
@@ -175,5 +174,6 @@ footer h6 {
 @media screen and (max-width: 450px) {
     nav a {
         font-size: 12px;
+        /* Quitar Barra de Navegacion */
     }
 }
